@@ -1,0 +1,22 @@
+$primary: #3f51b5;
+$secondary: #636b72;
+$success: #46a149;
+$danger: #f55549;
+$warning: #ed3e09;
+$info: #039be0;
+$black: #000;
+
+$primary-hover: #3246a8;
+$secondary-hover: #535a60;
+$success-hover: #3e913f;
+$danger-hover: #e24c41;
+$warning-hover: #d63306;
+$info-hover: #038ac4;
+$black-hover: #000;
+
+$colors: "primary" $primary, "secondary" $secondary, "success" $success,
+  "danger" $danger, "warning" $warning, "info" $info, "black" $black;
+
+$hovercolors: "primary" $primary-hover, "secondary" $secondary-hover,
+  "success" $success-hover, "danger" $danger-hover, "warning" $warning-hover,
+  "info" $info-hover, "black-hover" $black-hover;

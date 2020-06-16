@@ -1,0 +1,112 @@
+@import "colors";
+.btt {
+  padding: 7px 14px;
+  touch-action: manipulation;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+/*# Flat icons button styles */
+@each $name, $color in $colors {
+  .flat-btt-#{$name} {
+    border: 0;
+    color: $color;
+    background: transparent;
+  }
+  .flat-btt-#{$name}:hover {
+    background: #e7e7e7;
+  }
+}
+/*# Outline icons button styles */
+@each $name, $color in $colors {
+  .outline-btt-#{$name} {
+    border: 1px solid $color;
+    color: $color;
+    background: transparent;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+    box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+  }
+  .outline-btt-#{$name}:hover {
+    background: #e7e7e7;
+  }
+}
+/*# Fl icons button styles */
+@each $name, $color in $colors {
+  .fl-btt-#{$name} {
+    border: 1px solid $color;
+    color: #fff;
+    background: $color;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+    box-shadow: 3px 3px 5px 0px rgba(219, 219, 219, 1);
+  }
+  @each $name, $hovercolor in $hovercolors {
+    .fl-btt-#{$name}:hover {
+      background: $hovercolor;
+    }
+  }
+}
+.toggler {
+  margin-bottom: 20px;
+  left: 0;
+  border: 1px solid;
+  background: #fff;
+  border-radius: 5px;
+}
+#show {
+  display: none;
+}
+.btn-upload {
+  background: #ad301a;
+  color: #fff;
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 80%;
+  min-height: 80%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+.img-d {
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  margin: auto;
+  object-fit: cover;
+}
+
+.img-g {
+  width: 60px;
+  height: 60px;
+  border-radius: 200px;
+  margin: auto;
+  object-fit: cover;
+}
+.img-n {
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  margin: auto;
+  object-fit: cover;
+}
